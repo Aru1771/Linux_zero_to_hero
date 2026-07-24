@@ -1,4 +1,5 @@
 🐧 Linux Permission Commands Every DevOps Engineer Should Know 🚀
+------------------------------------------------------------------
 Linux permissions are one of those topics that come up almost everywhere—daily work, troubleshooting, and especially DevOps interviews.
 Instead of memorizing commands, try understanding when and why each command is used.
 
