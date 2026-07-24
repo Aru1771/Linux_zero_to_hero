@@ -5,7 +5,8 @@ linux topics for devops
 
 1. Permission Commands
    --------------------
-   umask
-   chmod
-   chown
-   chgrop
+   1. umask
+   2. chmod
+   3. chown
+   4. chgrop
+ 
