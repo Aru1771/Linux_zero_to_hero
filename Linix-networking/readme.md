@@ -41,7 +41,7 @@ I would learn it as a hands-on course, not just theory.
 I would learn it as a hands-on course, not just theory.
 
 Part 1 — Understand the Linux Network Interface
-
+--------------------------------------------------
 Start with:
 
 ip link
@@ -79,8 +79,9 @@ means:
 
 IP address = 192.168.1.100
 Prefix      = /24
-Part 2 — Understand IP Address + Subnet
 
+Part 2 — Understand IP Address + Subnet
+-----------------------------------------
 You absolutely need to understand this before Kubernetes networking.
 
 For:
