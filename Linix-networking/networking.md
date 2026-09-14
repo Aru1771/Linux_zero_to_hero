@@ -1,5 +1,5 @@
 1. waht is lo interface in linux ?
-
+   -----------------------------------
 A. lo stands for loopback.It is a virtual network interface that allows a Linux machine to communicate with itself.
    The most common loopback IPv4 address is: 127.0.0.1/8
    To check this use CMD: ip addr show <interface_name>, ip addr, ip link 
@@ -8,6 +8,7 @@ A. lo stands for loopback.It is a virtual network interface that allows a Linux 
 
 
 2. What is eth0 ?
+   ---------------
 A. eth0 is the network connection that Linux uses to communicate with other machines.
    eth0: usually represents an Ethernet network interface.
    It may be: a physical network card, a virtual network interface, a virtual NIC provided by a cloud platform
