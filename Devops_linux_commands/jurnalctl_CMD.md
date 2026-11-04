@@ -36,3 +36,27 @@ EC2 instance restarted unexpectedly
 
 
 This helps identify error-level messages from the previous boot.
+
+Practical exercise on your EC2 instance:
+---------------------------------------
+        
+        # 1. Check Jenkins service logs
+        sudo journalctl -u jenkins
+        
+        # 2. Check Jenkins errors
+        sudo journalctl -u jenkins -p err
+        
+        # 3. Monitor Jenkins live logs
+        sudo journalctl -u jenkins -f
+        
+        # 4. Check all current boot errors
+        sudo journalctl -b -p err
+        
+        # 5. Check previous boot errors
+        sudo journalctl -b -1 -p err
+        
+        # 6. Display last 50 Jenkins logs
+        sudo journalctl -u jenkins -n 50
+        
+        # 7. Check Docker live errors
+        sudo journalctl -u docker -f -p err
