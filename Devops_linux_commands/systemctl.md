@@ -31,4 +31,31 @@ Systemctl:
 
 <img width="816" height="632" alt="image" src="https://github.com/user-attachments/assets/f1ea6c7b-4881-4e2b-9be6-e79153976192" />
 
+Now investigate:
 
+    sudo systemctl status jenkins
+    sudo journalctl -u jenkins -n 50
+
+* This helps you identify why the service failed.
+
+<img width="1041" height="715" alt="image" src="https://github.com/user-attachments/assets/056a5e30-5f92-4e96-92a2-06a7293ca7ff" />
+
+<img width="893" height="416" alt="image" src="https://github.com/user-attachments/assets/a862dd88-0936-41c2-a094-2b1d3bf6c3c3" />
+
+# Step 1: Check service
+sudo systemctl status nginx
+
+# Step 2: Check failed services
+systemctl list-units --failed
+
+# Step 3: Check recent Nginx logs
+sudo journalctl -u nginx -n 50
+
+# Step 4: Validate Nginx configuration
+sudo nginx -t
+
+# Step 5: Restart if configuration is valid
+sudo systemctl restart nginx
+
+# Step 6: Verify
+sudo systemctl status nginx
