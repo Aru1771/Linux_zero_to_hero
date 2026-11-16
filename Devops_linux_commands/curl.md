@@ -22,3 +22,14 @@ It displays details such as:
 5. HTTP response headers.
 6. Connection errors, if any.
 
+
+Imp 2:
+
+curl -v --connect-timeout 5 http://app_name:9090
+
+<img width="805" height="308" alt="image" src="https://github.com/user-attachments/assets/c8d59e7b-900a-4f8d-8b19-774a636491ac" />
+
+<img width="952" height="631" alt="image" src="https://github.com/user-attachments/assets/d23cc960-ca3b-4f16-a53a-b56f11447059" />
+
+<img width="720" height="150" alt="image" src="https://github.com/user-attachments/assets/22ecf7b4-f751-4390-918c-83aefc4d2aad" />
+
